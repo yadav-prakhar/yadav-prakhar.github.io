@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakhar Yadav | Product Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fff7f3;
+            color: #332e2e;
+        }
+        .text-gradient {
+            background: linear-gradient(90deg, #d9ffb6, #332e2e);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+        .project-card {
+            transition: all 0.3s ease;
+        }
+        .project-card:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white bg-opacity-90 backdrop-blur-sm z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-gray-900">Prakhar Yadav</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#work" class="text-gray-600 hover:text-gray-900 transition">Work</a>
+                <a href="#about" class="text-gray-600 hover:text-gray-900 transition">About</a>
+                <a href="#contact" class="text-gray-600 hover:text-gray-900 transition">Contact</a>
+            </div>
+            <button class="md:hidden">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center pt-20 bg-[#d9ffb6]">
+        <div class="max-w-6xl mx-auto px-6 py-20">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                        Hi, I'm <span class="text-gradient">Prakhar</span> — 
+                        <span class="text-gradient">Product Designer</span> 
+                        focused on digital experiences.
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        I design thoughtful digital products that solve real problems for real people.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#work" class="px-6 py-3 bg-[#332e2e] text-[#d9ffb6] rounded-full font-medium hover:shadow-lg transition">
+                            View my work
+                        </a>
+                        <a href="#contact" class="px-6 py-3 border border-[#332e2e] text-[#332e2e] rounded-full font-medium hover:bg-[#d9ffb6] transition">
+                            Get in touch
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <img src="http://static.photos/workspace/1200x630/42" alt="Prakhar Yadav" class="rounded-2xl shadow-xl hover-scale">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="py-20 bg-[#fff7f3]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-16 text-center" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Selected Work</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    A collection of projects I've designed to solve meaningful problems.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-2xl overflow-hidden border border-gray-100" data-aos="fade-up">
+                    <div class="overflow-hidden">
+                        <img src="http://static.photos/technology/1200x630/1" alt="Project 1" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Fintech Dashboard</h3>
+                        <p class="text-gray-600 mb-4">Redesigned the analytics dashboard for a leading fintech company, improving user engagement by 40%.</p>
+                        <a href="#" class="text-blue-500 font-medium flex items-center">
+                            View case study <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-2xl overflow-hidden border border-gray-100" data-aos="fade-up" data-aos-delay="100">
+                    <div class="overflow-hidden">
+                        <img src="http://static.photos/medical/1200x630/2" alt="Project 2" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Health App Redesign</h3>
+                        <p class="text-gray-600 mb-4">Complete redesign of a health tracking app focusing on accessibility and ease of use.</p>
+                        <a href="#" class="text-blue-500 font-medium flex items-center">
+                            View case study <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card bg-white rounded-2xl overflow-hidden border border-gray-100" data-aos="fade-up" data-aos-delay="200">
+                    <div class="overflow-hidden">
+                        <img src="http://static.photos/education/1200x630/3" alt="Project 3" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">E-learning Platform</h3>
+                        <p class="text-gray-600 mb-4">Designed an intuitive learning experience for a startup focused on professional development.</p>
+                        <a href="#" class="text-blue-500 font-medium flex items-center">
+                            View case study <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card bg-white rounded-2xl overflow-hidden border border-gray-100" data-aos="fade-up" data-aos-delay="300">
+                    <div class="overflow-hidden">
+                        <img src="http://static.photos/retail/1200x630/4" alt="Project 4" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Retail Mobile App</h3>
+                        <p class="text-gray-600 mb-4">Created a seamless shopping experience for a fashion retail brand's mobile app.</p>
+                        <a href="#" class="text-blue-500 font-medium flex items-center">
+                            View case study <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-16" data-aos="fade-up">
+                <a href="#" class="px-6 py-3 border border-gray-300 text-gray-700 rounded-full font-medium hover:bg-gray-50 transition inline-flex items-center">
+                    View all projects <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-[#d9ffb6]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0" data-aos="fade-right">
+                    <img src="http://static.photos/office/1200x630/5" alt="About Prakhar" class="rounded-2xl shadow-xl hover-scale">
+                </div>
+                <div class="md:w-1/2 md:pl-16" data-aos="fade-left">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        I'm a product designer with 5+ years of experience creating digital products that are both beautiful and functional. My approach combines user research, thoughtful interaction design, and attention to detail.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Previously, I've worked with startups and established companies across fintech, healthcare, and e-commerce industries. I'm passionate about solving complex problems through design.
+                    </p>
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold mb-4">Skills & Expertise</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 bg-white rounded-full text-sm font-medium shadow-sm">User Research</span>
+                            <span class="px-4 py-2 bg-white rounded-full text-sm font-medium shadow-sm">UI/UX Design</span>
+                            <span class="px-4 py-2 bg-white rounded-full text-sm font-medium shadow-sm">Prototyping</span>
+                            <span class="px-4 py-2 bg-white rounded-full text-sm font-medium shadow-sm">Interaction Design</span>
+                            <span class="px-4 py-2 bg-white rounded-full text-sm font-medium shadow-sm">Design Systems</span>
+                            <span class="px-4 py-2 bg-white rounded-full text-sm font-medium shadow-sm">Figma</span>
+                            <span class="px-4 py-2 bg-white rounded-full text-sm font-medium shadow-sm">User Testing</span>
+                        </div>
+                    </div>
+                    <a href="#" class="inline-flex items-center text-blue-500 font-medium">
+                        Download Resume <i data-feather="download" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-[#fff7f3]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">What People Say</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Kind words from colleagues and clients.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-2xl" data-aos="fade-up">
+                    <div class="flex items-center mb-6">
+                        <img src="http://static.photos/people/200x200/1" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah Johnson</h4>
+                            <p class="text-gray-500 text-sm">Product Manager, Fintech Co</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "Prakhar transformed our product with his thoughtful design approach. He truly understands how to balance business goals with user needs."
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-6">
+                        <img src="http://static.photos/people/200x200/2" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Michael Chen</h4>
+                            <p class="text-gray-500 text-sm">CEO, Health Startup</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "Working with Prakhar was a game-changer for our startup. His designs not only looked great but significantly improved our user retention."
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-6">
+                        <img src="http://static.photos/people/200x200/3" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Emma Rodriguez</h4>
+                            <p class="text-gray-500 text-sm">UX Lead, Retail Company</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "Prakhar's attention to detail and user-centered approach makes him one of the best designers I've had the pleasure to collaborate with."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-[#d9ffb6]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's Work Together</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Have a project in mind or want to chat? I'd love to hear from you.
+                </p>
+            </div>
+
+            <div class="max-w-2xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden" data-aos="fade-up">
+                <div class="p-8 md:p-12">
+                    <form>
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full px-6 py-3 bg-[#332e2e] text-[#d9ffb6] rounded-full font-medium hover:shadow-lg transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-center items-center mt-16 space-y-6 md:space-y-0 md:space-x-12 text-center" data-aos="fade-up">
+                <div>
+                    <div class="flex justify-center mb-2">
+                        <i data-feather="mail" class="w-6 h-6 text-blue-500"></i>
+                    </div>
+                    <a href="mailto:prakhar@example.com" class="text-[#332e2e] hover:text-[#d9ffb6] transition">prakhar@example.com</a>
+                </div>
+                <div>
+                    <div class="flex justify-center mb-2">
+                        <i data-feather="linkedin" class="w-6 h-6 text-blue-500"></i>
+                    </div>
+                    <a href="https://www.linkedin.com/in/prakhar-yadav-856772b6/" target="_blank" class="text-[#332e2e] hover:text-[#d9ffb6] transition">LinkedIn</a>
+                </div>
+                <div>
+                    <div class="flex justify-center mb-2">
+                        <i data-feather="twitter" class="w-6 h-6 text-blue-500"></i>
+                    </div>
+                    <a href="#" class="text-[#332e2e] hover:text-[#d9ffb6] transition">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-[#332e2e] text-[#d9ffb6]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-xl font-bold">Prakhar Yadav</a>
+                    <p class="text-gray-400 mt-2">Product Designer creating meaningful digital experiences.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-[#d9ffb6] hover:text-[#fff7f3] transition">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="dribbble"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center md:text-left">
+                <p class="text-gray-400">© 2023 Prakhar Yadav. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
+</body>
+</html>
