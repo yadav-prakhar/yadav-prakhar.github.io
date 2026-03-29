@@ -1,0 +1,21 @@
+{
+  "name": "yadav-prakhar-github-io",
+  "version": "1.0.0",
+  "description": "Portfolio of Prakhar Yadav - building thoughtful, user-centric products with clean code and modern UX.",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./css/styles.css -o ./css/styles.css --minify",
+    "build:js": "npx tsc js/main.ts --outDir js --module ESNext --target ES2020 --moduleResolution node --esModuleInterop --allowSyntheticDefaultImports --strict false --skipLibCheck",
+    "build": "npm run build:css && npm run build:js",
+    "watch:css": "npx tailwindcss -i ./css/styles.css -o ./css/styles.css --watch",
+    "dev": "npm run watch:css"
+  },
+  "keywords": ["portfolio", "tailwind", "typescript"],
+  "author": "Prakhar Yadav",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.18",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
+  }
+}
