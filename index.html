@@ -117,6 +117,10 @@
           <span class="relative z-10">MCP</span>
           <span class="absolute bottom-0 left-0 w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
         </a>
+        <a href="#publications" class="px-4 py-2 rounded-xl hover:bg-accent-100/30 dark:hover:bg-accent-900/20 transition-colors duration-300 relative group overflow-hidden">
+          <span class="relative z-10">Publications</span>
+          <span class="absolute bottom-0 left-0 w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+        </a>
         <a href="#contact" class="px-4 py-2 rounded-xl hover:bg-accent-100/30 dark:hover:bg-accent-900/20 transition-colors duration-300 relative group overflow-hidden">
           <span class="relative z-10">Contact</span>
           <span class="absolute bottom-0 left-0 w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
@@ -159,6 +163,9 @@
         </a>
         <a href="#mcp-gallery" class="px-4 py-3 rounded-xl hover:bg-accent-100/30 dark:hover:bg-accent-900/20 transition-colors duration-300 flex items-center gap-3">
           <i class="ri-server-line text-lg text-accent"></i> MCP Gallery
+        </a>
+        <a href="#publications" class="px-4 py-3 rounded-xl hover:bg-accent-100/30 dark:hover:bg-accent-900/20 transition-colors duration-300 flex items-center gap-3">
+          <i class="ri-article-line text-lg text-accent"></i> Publications
         </a>
         <a href="#contact" class="px-4 py-3 rounded-xl hover:bg-accent-100/30 dark:hover:bg-accent-900/20 transition-colors duration-300 flex items-center gap-3">
           <i class="ri-mail-send-line text-lg text-accent"></i> Contact
@@ -521,45 +528,45 @@
             </div>
           </a>
 
-          <!-- Custom MCP Server 1 -->
-          <div class="fade-up delay-100">
+          <!-- ServiceNow MCP -->
+          <a href="https://github.com/yadav-prakhar/servicenow-mcp" target="_blank" rel="noreferrer" class="group fade-up delay-100">
             <div class="h-full rounded-2xl overflow-hidden bg-[#0A0A0A] border border-slate-800/50 p-6 hover:border-slate-700/50 transition-all duration-300">
               <div class="flex items-center gap-3 mb-4">
                 <div class="h-12 w-12 rounded-xl bg-accent-alt/20 flex items-center justify-center">
-                  <i class="ri-database-2-line text-2xl text-accent-alt"></i>
+                  <i class="ri-server-line text-2xl text-accent-alt"></i>
                 </div>
                 <div>
-                  <h3 class="text-lg font-bold text-white">Database Inspector</h3>
-                  <span class="text-xs font-mono text-slate-500">Internal Tool</span>
+                  <h3 class="text-lg font-bold text-white group-hover:text-accent-alt transition-colors">ServiceNow MCP</h3>
+                  <span class="text-xs font-mono text-slate-500">MCP Server</span>
                 </div>
               </div>
-              <p class="text-slate-400 text-sm mb-4">Query and explore databases directly from AI conversations. Secure, read-only access with natural language.</p>
+              <p class="text-slate-400 text-sm mb-4">Seamlessly interact with ServiceNow instances on your behalf, bringing a host of capabilities to the AI agent of your choice.</p>
               <div class="flex gap-2">
-                <span class="text-xs px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono">PostgreSQL</span>
-                <span class="text-xs px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono">Node.js</span>
+                <span class="text-xs px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono">TypeScript</span>
+                <span class="text-xs px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono">ServiceNow</span>
               </div>
             </div>
-          </div>
+          </a>
 
-          <!-- Custom MCP Server 2 -->
-          <div class="fade-up delay-200">
+          <!-- MCP Capabilities Server -->
+          <a href="https://github.com/yadav-prakhar/MCP-Capabilities-Server" target="_blank" rel="noreferrer" class="group fade-up delay-200">
             <div class="h-full rounded-2xl overflow-hidden bg-[#0A0A0A] border border-slate-800/50 p-6 hover:border-slate-700/50 transition-all duration-300">
               <div class="flex items-center gap-3 mb-4">
                 <div class="h-12 w-12 rounded-xl bg-blue-500/20 flex items-center justify-center">
-                  <i class="ri-file-search-line text-2xl text-blue-400"></i>
+                  <i class="ri-cpu-line text-2xl text-blue-400"></i>
                 </div>
                 <div>
-                  <h3 class="text-lg font-bold text-white">File Indexer</h3>
-                  <span class="text-xs font-mono text-slate-500">Internal Tool</span>
+                  <h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition-colors">MCP Capabilities Server</h3>
+                  <span class="text-xs font-mono text-slate-500">MCP Server</span>
                 </div>
               </div>
-              <p class="text-slate-400 text-sm mb-4">Semantic search across project files. AI can find code, docs, and configs without manual navigation.</p>
+              <p class="text-slate-400 text-sm mb-4">An MCP server that exposes and manages capabilities, enabling AI agents to discover and interact with available tools dynamically.</p>
               <div class="flex gap-2">
                 <span class="text-xs px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono">TypeScript</span>
-                <span class="text-xs px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono">Embeddings</span>
+                <span class="text-xs px-2 py-1 rounded bg-slate-800 text-slate-400 font-mono">MCP</span>
               </div>
             </div>
-          </div>
+          </a>
         </div>
 
         <!-- Stats row -->
@@ -819,8 +826,9 @@
 
         <!-- Project cards grid -->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
           <!-- Project 1: MCP Maker -->
-          <a href="https://www.npmjs.com/package/mcp-maker" target="_blank" rel="noreferrer" class="group fade-up">
+          <a href="https://github.com/yadav-prakhar/mcp-maker" target="_blank" rel="noreferrer" class="group fade-up">
             <div class="card-hover h-full rounded-2xl overflow-hidden bg-white dark:bg-slate-800/90 shadow-md border border-slate-200/50 dark:border-slate-700/50 flex flex-col transition-all duration-300">
               <div class="relative overflow-hidden">
                 <div class="aspect-[16/9] bg-gradient-to-br from-accent/20 via-accent-600/20 to-accent-alt/20 grid place-items-center">
@@ -828,32 +836,21 @@
                     <i class="ri-terminal-box-line text-3xl"></i>
                   </div>
                 </div>
-                
                 <div class="absolute inset-0 bg-gradient-to-t from-accent-600/90 to-accent-600/20 opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex items-center justify-center">
-                  <span class="px-4 py-2 rounded-full border-2 border-white text-white font-medium opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
-                    View Project
-                  </span>
+                  <span class="px-4 py-2 rounded-full border-2 border-white text-white font-medium opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">View Project</span>
                 </div>
               </div>
-              
               <div class="p-6 flex-grow flex flex-col">
                 <div class="flex items-center justify-between mb-2">
                   <h3 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors duration-300">MCP Maker</h3>
                   <span class="text-xs px-2.5 py-1 rounded-full bg-accent-50 dark:bg-accent-900/50 text-accent-700 dark:text-accent-300 font-medium">CLI Tool</span>
                 </div>
-                
                 <p class="text-slate-600 dark:text-slate-300 mb-3">Scaffold production-ready TypeScript MCP servers in seconds. Handles templates, testing, and packaging—the boring stuff so you don't have to.</p>
-                
                 <div class="mt-auto">
                   <div class="flex items-center gap-3 mb-3 text-xs text-slate-500">
-                    <span class="flex items-center gap-1">
-                      <i class="ri-star-line"></i> 500+
-                    </span>
-                    <span class="flex items-center gap-1">
-                      <i class="ri-download-line"></i> 1.2k/wk
-                    </span>
+                    <span class="flex items-center gap-1"><i class="ri-star-line"></i> 500+</span>
+                    <span class="flex items-center gap-1"><i class="ri-download-line"></i> 1.2k/wk</span>
                   </div>
-                  
                   <div class="flex flex-wrap gap-2">
                     <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">TypeScript</span>
                     <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">Node.js</span>
@@ -873,32 +870,17 @@
                     <i class="ri-server-line text-3xl"></i>
                   </div>
                 </div>
-
                 <div class="absolute inset-0 bg-gradient-to-t from-accent-alt-600/90 to-accent-alt-600/20 opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex items-center justify-center">
-                  <span class="px-4 py-2 rounded-full border-2 border-white text-white font-medium opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
-                    View Project
-                  </span>
+                  <span class="px-4 py-2 rounded-full border-2 border-white text-white font-medium opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">View Project</span>
                 </div>
               </div>
-
               <div class="p-6 flex-grow flex flex-col">
                 <div class="flex items-center justify-between mb-2">
                   <h3 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-accent-alt-600 dark:group-hover:text-accent-alt-400 transition-colors duration-300">ServiceNow MCP</h3>
                   <span class="text-xs px-2.5 py-1 rounded-full bg-accent-alt-50 dark:bg-accent-alt-900/50 text-accent-alt-700 dark:text-accent-alt-300 font-medium">MCP Server</span>
                 </div>
-
                 <p class="text-slate-600 dark:text-slate-300 mb-3">Seamlessly interact with ServiceNow instances on your behalf, bringing a host of capabilities to the AI agent of your choice.</p>
-
                 <div class="mt-auto">
-                  <div class="flex items-center gap-3 mb-3 text-xs text-slate-500">
-                    <span class="flex items-center gap-1">
-                      <i class="ri-calendar-line"></i> Jul 2025
-                    </span>
-                    <span class="flex items-center gap-1">
-                      <i class="ri-building-line"></i> ServiceNow
-                    </span>
-                  </div>
-
                   <div class="flex flex-wrap gap-2">
                     <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">TypeScript</span>
                     <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">MCP</span>
@@ -909,8 +891,8 @@
             </div>
           </a>
 
-          <!-- Project 3: Markdown ServiceNow -->
-          <a href="https://github.com/yadav-prakhar/markdown-servicenow" target="_blank" rel="noreferrer" class="group fade-up delay-200">
+          <!-- Project 3: Markdown SN Extension -->
+          <a href="https://github.com/yadav-prakhar/markdown-sn-extension" target="_blank" rel="noreferrer" class="group fade-up delay-200">
             <div class="card-hover h-full rounded-2xl overflow-hidden bg-white dark:bg-slate-800/90 shadow-md border border-slate-200/50 dark:border-slate-700/50 flex flex-col transition-all duration-300">
               <div class="relative overflow-hidden">
                 <div class="aspect-[16/9] bg-gradient-to-br from-purple-500/20 via-pink-500/20 to-rose-500/20 grid place-items-center">
@@ -918,41 +900,198 @@
                     <i class="ri-markdown-line text-3xl"></i>
                   </div>
                 </div>
-
                 <div class="absolute inset-0 bg-gradient-to-t from-purple-600/90 to-purple-600/20 opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex items-center justify-center">
-                  <span class="px-4 py-2 rounded-full border-2 border-white text-white font-medium opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
-                    View Project
-                  </span>
+                  <span class="px-4 py-2 rounded-full border-2 border-white text-white font-medium opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">View Project</span>
                 </div>
               </div>
-
               <div class="p-6 flex-grow flex flex-col">
                 <div class="flex items-center justify-between mb-2">
-                  <h3 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors duration-300">Markdown ServiceNow</h3>
-                  <span class="text-xs px-2.5 py-1 rounded-full bg-purple-50 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 font-medium">Plugin</span>
+                  <h3 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors duration-300">Markdown to ServiceNow</h3>
+                  <span class="text-xs px-2.5 py-1 rounded-full bg-purple-50 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 font-medium">Browser Extension</span>
                 </div>
-
-                <p class="text-slate-600 dark:text-slate-300 mb-3">Write markdown in ServiceNow easily. From headings to tables & GitHub-style alerts — powerful markdown features without any hassle.</p>
-
+                <p class="text-slate-600 dark:text-slate-300 mb-3">Chrome extension to write markdown in ServiceNow. From headings to tables & GitHub-style alerts — convert with one click, popup converter, context menu, and in-page toolbar.</p>
                 <div class="mt-auto">
-                  <div class="flex items-center gap-3 mb-3 text-xs text-slate-500">
-                    <span class="flex items-center gap-1">
-                      <i class="ri-calendar-line"></i> Jan 2026
-                    </span>
-                    <span class="flex items-center gap-1">
-                      <i class="ri-building-line"></i> ServiceNow
-                    </span>
-                  </div>
-
                   <div class="flex flex-wrap gap-2">
                     <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">JavaScript</span>
-                    <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">ServiceNow</span>
+                    <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">Chrome Extension</span>
                     <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">Markdown</span>
                   </div>
                 </div>
               </div>
             </div>
           </a>
+
+          <!-- Project 4: MCP Capabilities Server -->
+          <a href="https://github.com/yadav-prakhar/MCP-Capabilities-Server" target="_blank" rel="noreferrer" class="group fade-up delay-100">
+            <div class="card-hover h-full rounded-2xl overflow-hidden bg-white dark:bg-slate-800/90 shadow-md border border-slate-200/50 dark:border-slate-700/50 flex flex-col transition-all duration-300">
+              <div class="relative overflow-hidden">
+                <div class="aspect-[16/9] bg-gradient-to-br from-blue-500/20 via-cyan-500/20 to-teal-500/20 grid place-items-center">
+                  <div class="h-16 w-16 rounded-2xl bg-white/90 dark:bg-slate-800/90 shadow-lg grid place-items-center text-blue-600 dark:text-blue-400 transform group-hover:scale-110 transition-transform duration-300">
+                    <i class="ri-cpu-line text-3xl"></i>
+                  </div>
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-blue-600/90 to-blue-600/20 opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex items-center justify-center">
+                  <span class="px-4 py-2 rounded-full border-2 border-white text-white font-medium opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">View Project</span>
+                </div>
+              </div>
+              <div class="p-6 flex-grow flex flex-col">
+                <div class="flex items-center justify-between mb-2">
+                  <h3 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">MCP Capabilities Server</h3>
+                  <span class="text-xs px-2.5 py-1 rounded-full bg-blue-50 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 font-medium">MCP Server</span>
+                </div>
+                <p class="text-slate-600 dark:text-slate-300 mb-3">An MCP server that exposes and manages capabilities, enabling AI agents to discover and interact with available tools dynamically.</p>
+                <div class="mt-auto">
+                  <div class="flex flex-wrap gap-2">
+                    <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">TypeScript</span>
+                    <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">MCP</span>
+                    <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">Node.js</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 5: Image Compression -->
+          <a href="https://github.com/yadav-prakhar/Image-Compression" target="_blank" rel="noreferrer" class="group fade-up delay-200">
+            <div class="card-hover h-full rounded-2xl overflow-hidden bg-white dark:bg-slate-800/90 shadow-md border border-slate-200/50 dark:border-slate-700/50 flex flex-col transition-all duration-300">
+              <div class="relative overflow-hidden">
+                <div class="aspect-[16/9] bg-gradient-to-br from-green-500/20 via-emerald-500/20 to-teal-500/20 grid place-items-center">
+                  <div class="h-16 w-16 rounded-2xl bg-white/90 dark:bg-slate-800/90 shadow-lg grid place-items-center text-green-600 dark:text-green-400 transform group-hover:scale-110 transition-transform duration-300">
+                    <i class="ri-image-line text-3xl"></i>
+                  </div>
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-green-600/90 to-green-600/20 opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex items-center justify-center">
+                  <span class="px-4 py-2 rounded-full border-2 border-white text-white font-medium opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">View Project</span>
+                </div>
+              </div>
+              <div class="p-6 flex-grow flex flex-col">
+                <div class="flex items-center justify-between mb-2">
+                  <h3 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors duration-300">Image Compression</h3>
+                  <span class="text-xs px-2.5 py-1 rounded-full bg-green-50 dark:bg-green-900/50 text-green-700 dark:text-green-300 font-medium">ML / CV</span>
+                </div>
+                <p class="text-slate-600 dark:text-slate-300 mb-3">Image compression implementation leveraging machine learning and computer vision techniques to achieve efficient and high-quality image reduction.</p>
+                <div class="mt-auto">
+                  <div class="flex flex-wrap gap-2">
+                    <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">Python</span>
+                    <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">Computer Vision</span>
+                    <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">ML</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 6: SEGY Editor -->
+          <a href="https://github.com/yadav-prakhar/SEGY-Editor" target="_blank" rel="noreferrer" class="group fade-up delay-300">
+            <div class="card-hover h-full rounded-2xl overflow-hidden bg-white dark:bg-slate-800/90 shadow-md border border-slate-200/50 dark:border-slate-700/50 flex flex-col transition-all duration-300">
+              <div class="relative overflow-hidden">
+                <div class="aspect-[16/9] bg-gradient-to-br from-orange-500/20 via-amber-500/20 to-yellow-500/20 grid place-items-center">
+                  <div class="h-16 w-16 rounded-2xl bg-white/90 dark:bg-slate-800/90 shadow-lg grid place-items-center text-orange-600 dark:text-orange-400 transform group-hover:scale-110 transition-transform duration-300">
+                    <i class="ri-file-edit-line text-3xl"></i>
+                  </div>
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-orange-600/90 to-orange-600/20 opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex items-center justify-center">
+                  <span class="px-4 py-2 rounded-full border-2 border-white text-white font-medium opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">View Project</span>
+                </div>
+              </div>
+              <div class="p-6 flex-grow flex flex-col">
+                <div class="flex items-center justify-between mb-2">
+                  <h3 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors duration-300">SEGY Editor</h3>
+                  <span class="text-xs px-2.5 py-1 rounded-full bg-orange-50 dark:bg-orange-900/50 text-orange-700 dark:text-orange-300 font-medium">Desktop App</span>
+                </div>
+                <p class="text-slate-600 dark:text-slate-300 mb-3">Utility software for viewing, manipulating and merging .segy files which store seismic data. Built with C++ and Qt Framework, deployed on Linux systems.</p>
+                <div class="mt-auto">
+                  <div class="flex flex-wrap gap-2">
+                    <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">C++</span>
+                    <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">Qt Framework</span>
+                    <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">Linux</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 7: Indoor WiFi Localization -->
+          <div class="group fade-up delay-100">
+            <div class="card-hover h-full rounded-2xl overflow-hidden bg-white dark:bg-slate-800/90 shadow-md border border-slate-200/50 dark:border-slate-700/50 flex flex-col transition-all duration-300">
+              <div class="relative overflow-hidden">
+                <div class="aspect-[16/9] bg-gradient-to-br from-indigo-500/20 via-violet-500/20 to-purple-500/20 grid place-items-center">
+                  <div class="h-16 w-16 rounded-2xl bg-white/90 dark:bg-slate-800/90 shadow-lg grid place-items-center text-indigo-600 dark:text-indigo-400">
+                    <i class="ri-wifi-line text-3xl"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 flex-grow flex flex-col">
+                <div class="flex items-center justify-between mb-2">
+                  <h3 class="text-lg font-bold text-slate-900 dark:text-white">Indoor WiFi Localization</h3>
+                  <span class="text-xs px-2.5 py-1 rounded-full bg-indigo-50 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 font-medium">ML Research</span>
+                </div>
+                <p class="text-slate-600 dark:text-slate-300 mb-3">Predicts a user's location inside a building based on received WiFi RSSI signal data. Collected and processed data across multiple models, achieving 80% accuracy in location prediction.</p>
+                <div class="mt-auto">
+                  <div class="flex flex-wrap gap-2">
+                    <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">Python</span>
+                    <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">Machine Learning</span>
+                    <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">WiFi RSSI</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8: AnoTech -->
+          <div class="group fade-up delay-200">
+            <div class="card-hover h-full rounded-2xl overflow-hidden bg-white dark:bg-slate-800/90 shadow-md border border-slate-200/50 dark:border-slate-700/50 flex flex-col transition-all duration-300">
+              <div class="relative overflow-hidden">
+                <div class="aspect-[16/9] bg-gradient-to-br from-rose-500/20 via-pink-500/20 to-fuchsia-500/20 grid place-items-center">
+                  <div class="h-16 w-16 rounded-2xl bg-white/90 dark:bg-slate-800/90 shadow-lg grid place-items-center text-rose-600 dark:text-rose-400">
+                    <i class="ri-bar-chart-box-line text-3xl"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 flex-grow flex flex-col">
+                <div class="flex items-center justify-between mb-2">
+                  <h3 class="text-lg font-bold text-slate-900 dark:text-white">AnoTech</h3>
+                  <span class="text-xs px-2.5 py-1 rounded-full bg-rose-50 dark:bg-rose-900/50 text-rose-700 dark:text-rose-300 font-medium">Web App</span>
+                </div>
+                <p class="text-slate-600 dark:text-slate-300 mb-3">Web application for detecting anomalies in datasets using a parametric-statistical approach. Features a user-friendly interface for ease of use, making data anomaly detection accessible to all.</p>
+                <div class="mt-auto">
+                  <div class="flex flex-wrap gap-2">
+                    <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">Python</span>
+                    <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">Statistics</span>
+                    <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">Web</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 9: Sports Winner Prediction -->
+          <div class="group fade-up delay-300">
+            <div class="card-hover h-full rounded-2xl overflow-hidden bg-white dark:bg-slate-800/90 shadow-md border border-slate-200/50 dark:border-slate-700/50 flex flex-col transition-all duration-300">
+              <div class="relative overflow-hidden">
+                <div class="aspect-[16/9] bg-gradient-to-br from-cyan-500/20 via-sky-500/20 to-blue-500/20 grid place-items-center">
+                  <div class="h-16 w-16 rounded-2xl bg-white/90 dark:bg-slate-800/90 shadow-lg grid place-items-center text-cyan-600 dark:text-cyan-400">
+                    <i class="ri-trophy-line text-3xl"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 flex-grow flex flex-col">
+                <div class="flex items-center justify-between mb-2">
+                  <h3 class="text-lg font-bold text-slate-900 dark:text-white">Sports Winner Prediction</h3>
+                  <span class="text-xs px-2.5 py-1 rounded-full bg-cyan-50 dark:bg-cyan-900/50 text-cyan-700 dark:text-cyan-300 font-medium">ML</span>
+                </div>
+                <p class="text-slate-600 dark:text-slate-300 mb-3">Predicts the winner of hockey matches using machine learning models trained on historical game data, team statistics, and performance metrics.</p>
+                <div class="mt-auto">
+                  <div class="flex flex-wrap gap-2">
+                    <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">Python</span>
+                    <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">Machine Learning</span>
+                    <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">Hockey</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
         
         <!-- View more projects button -->
@@ -1075,13 +1214,62 @@
       </div>
     </section>
 
+    <!-- Publications Section -->
+    <section id="publications" class="py-24 relative overflow-hidden">
+      <div class="absolute top-1/2 right-0 w-72 h-72 bg-accent/5 rounded-full blur-3xl -translate-y-1/2"></div>
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 relative">
+        <!-- Section header -->
+        <div class="relative mb-16 fade-left">
+          <span class="inline-block text-sm font-mono text-accent px-3 py-1 bg-accent/10 rounded-full mb-4">RESEARCH</span>
+          <h2 class="text-4xl md:text-5xl font-display font-bold">Published <span class="gradient-text">work</span></h2>
+          <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl">Peer-reviewed research contributions to the academic community.</p>
+        </div>
+
+        <!-- Publication card -->
+        <div class="fade-up">
+          <div class="rounded-2xl p-8 bg-white dark:bg-slate-800/90 border border-slate-200/50 dark:border-slate-700/50 shadow-md hover:border-accent/30 transition-all duration-300">
+            <div class="flex flex-col lg:flex-row gap-6 items-start">
+              <!-- Icon -->
+              <div class="h-16 w-16 shrink-0 rounded-2xl bg-accent/10 flex items-center justify-center">
+                <i class="ri-article-line text-3xl text-accent"></i>
+              </div>
+
+              <!-- Content -->
+              <div class="flex-1">
+                <div class="flex flex-wrap items-center gap-3 mb-3">
+                  <span class="text-xs px-2.5 py-1 rounded-full bg-accent-50 dark:bg-accent-900/50 text-accent-700 dark:text-accent-300 font-mono">Springer · Jun 2021</span>
+                  <span class="text-xs px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-mono">International Conference</span>
+                </div>
+
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">
+                  Movie Recommendation System Addressing Changes in User Preference with Time
+                </h3>
+
+                <p class="text-slate-600 dark:text-slate-300 text-sm mb-4">
+                  Published in <em>Hybrid Intelligent Systems</em> — Proceedings of the 20th International Conference on Hybrid Intelligent Systems (HIS 2020), December 14–16, 2020. 
+                  Series: <strong>Advances in Intelligent Systems and Computing</strong>, Springer International Publishing.
+                </p>
+
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">Recommendation Systems</span>
+                  <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">Machine Learning</span>
+                  <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">User Preference Modeling</span>
+                  <span class="text-xs px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-300">Hybrid Intelligent Systems</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact -->
     <section id="contact" class="max-w-7xl mx-auto px-6 py-16">
       <div class="grid lg:grid-cols-3 gap-10">
         <div class="lg:col-span-1 fade-up">
           <h2 class="text-2xl font-bold">Contact</h2>
-          <p class="mt-2 text-slate-600 dark:text-slate-300">Let’s work together</p>
-          <p class="mt-4 text-slate-700 dark:text-slate-300">I’m open to full-time roles, freelance work, and interesting collaborations.</p>
+          <p class="mt-2 text-slate-600 dark:text-slate-300">Let's work together</p>
+          <p class="mt-4 text-slate-700 dark:text-slate-300">I'm open to full-time roles, freelance work, and interesting collaborations.</p>
         </div>
         <form class="lg:col-span-2 fade-up delay-100 grid sm:grid-cols-2 gap-4" action="mailto:codewithp.dev@gmail.com?subject=Portfolio Contact" method="POST" enctype="text/plain">
           <input class="col-span-2 sm:col-span-1 h-12 rounded-xl px-4 ring-1 ring-slate-200 dark:ring-white/10 bg-white dark:bg-white/5" placeholder="Name" name="name" required />
@@ -1156,6 +1344,11 @@
             <li>
               <a href="#skills" class="footer-link">
                 <i class="ri-arrow-right-s-line"></i> Skills
+              </a>
+            </li>
+            <li>
+              <a href="#publications" class="footer-link">
+                <i class="ri-arrow-right-s-line"></i> Publications
               </a>
             </li>
             <li>
