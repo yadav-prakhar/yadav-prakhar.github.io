@@ -1,3 +1,4 @@
+document.documentElement.classList.add('js-loaded');
 document.getElementById('year').textContent = new Date().getFullYear().toString();
 const menuBtn = document.getElementById('menuBtn');
 const mobileMenu = document.getElementById('mobileMenu');
@@ -62,6 +63,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     successMessage.classList.add('hidden');
                 }, 3000);
             }
+        });
+    }
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = encodeURIComponent(contactForm.querySelector('[name="name"]').value);
+            const email = encodeURIComponent(contactForm.querySelector('[name="email"]').value);
+            const message = encodeURIComponent(contactForm.querySelector('[name="message"]').value);
+            window.location.href = `mailto:codewithp.dev@gmail.com?subject=Portfolio%20Contact&body=Name%3A%20${name}%0AEmail%3A%20${email}%0A%0A${message}`;
         });
     }
 });
